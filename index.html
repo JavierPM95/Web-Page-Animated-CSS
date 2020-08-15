@@ -1,11 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Animated CSS</title>
-</head>
-<body>
-    <h1>first line</h1>
-</body>
+    <!-- GOOGLE FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BOOTSTRAP 4 -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <!-- BOOTWATCH -->
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/litera/bootstrap.min.css"
+    />
+    <!-- SCROOL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Animated CSS</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#header"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#info-one">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header id="header">
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="header-content-left">
+              <img src="css/Bicicle.svg" class="img-fluid" alt="Bicicle" />
+            </div>
+          </div>
+          <div class="col-md-6 my-auto">
+            <div class="header-content-right">
+              <h1 class="display-4">Lorem, ipsum dolor.</h1>
+              <p class="mt-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Inventore officiis porro veritatis quod voluptates voluptate,
+                rerum quibusdam architecto ex itaque.
+              </p>
+              <a href="#" class="btn btn-primary btn-lg mt-2">Start now!</a>
+              <a href="#" class="btn btn-outline-primary mt-2">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Testimonial -->
+
+    <section id="testimonial">
+      <div class="container">
+        <p class="h6">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet
+          similique dolorem soluta qui nam provident dolore rerum. Distinctio,
+          excepturi. Voluptatum expedita nostrum quos ea voluptates.
+        </p>
+        <blockquote>- Gabriel Motens.</blockquote>
+      </div>
+    </section>
+
+    <!-- INFO ONE -->
+    <section id="info-one">
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="info-one-left">
+              <img src="css/Info-one.svg" class="img-fluid" alt="Trip" />
+            </div>
+          </div>
+          <div class="col-md-6 my-auto">
+            <div class="info-one-right">
+              <h2>Lorem ipsum dolor sit amet.</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                ex, laboriosam quia quo esse dignissimos deserunt, ad dolores
+                explicabo dolor veniam ipsam, itaque illum laborum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFO TWO -->
+
+    <section id="info-two">
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-md-6 my-auto">
+            <div class="info-one-left">
+              <h2>Lorem ipsum dolor sit amet.</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                ex, laboriosam quia quo esse dignissimos deserunt, ad dolores
+                explicabo dolor veniam ipsam, itaque illum laborum.
+              </p>
+            </div>
+            </div>
+              <div class="col-md-6">
+                <div class="info-one-right">
+                  <img src="css/info-two.svg" class="img-fluid" alt="Enjoy" />
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+      <div class="container">
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <div class="conctact-content-left">
+              <h2>Lorem, ipsum dolor.</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus doloribus at aut voluptatibus nihil eaque.</p>    
+            </div>
+            </div>
+          <div class="col-md-6">
+            <div class="conctact-content-right">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Name">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Last name">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="email">
+              </div>
+              <div class="form-group">
+                <textarea name="message" cols="30" rows="5" placeholder="Message" class="form-control"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="bg-dark">
+      <div class="container text-center p-5">
+        <ul class="list-inline">
+          <li class="list-inline-item footer-menu"><a href="#header">Home</a></li>
+          <li class="list-inline-item footer-menu"><a href="#info-one">About</a></li>
+          <li class="list-inline-item footer-menu"><a href="#contact">Contact</a></li>
+        </ul>
+        <small>© Todos los derechos reservados. Creado por JavierPM95</small>
+      </div>
+    </footer>
+
+    <!-- CUSTOM CSS -->
+
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

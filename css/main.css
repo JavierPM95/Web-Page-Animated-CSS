@@ -1,0 +1,49 @@
+/* GENERAL*/
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+p {
+    color: grey;
+}
+
+/*NAVIGATION*/
+
+/*HEADER*/
+
+#header {
+    margin-top: 80px;
+}
+
+/*TESTIMONIAL*/
+
+#testimonial {
+    background: #f1f1f1f1;
+    padding: 40px 0 40px 0;
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+/*INFO ONE*/
+
+/*INFO TWO*/
+
+/*CONTACT*/
+#contact {
+    background: #f1f1f1;
+    margin-top: 40px;
+    padding: 40px 0;
+}
+
+/*FOOOTER*/
+
+#footer {
+    color: #f1f1f1;
+    
+}
+
+#footer a {
+    color: #ffffff;
+}
