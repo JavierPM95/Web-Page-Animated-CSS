@@ -53,7 +53,7 @@
               <a class="nav-link" href="#info-one">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -77,8 +77,8 @@
                 Inventore officiis porro veritatis quod voluptates voluptate,
                 rerum quibusdam architecto ex itaque.
               </p>
-              <a href="#" class="btn btn-primary btn-lg mt-2">Start now!</a>
-              <a href="#" class="btn btn-outline-primary mt-2">Learn more</a>
+              <a href="#" class="btn btn-primary btn-lg mt-2 header-btn-main">Start now!</a>
+              <a href="#" class="btn btn-outline-primary mt-2 header-btn-secondary">Learn more</a>
             </div>
           </div>
         </div>
@@ -127,7 +127,7 @@
       <div class="container mt-4">
         <div class="row">
           <div class="col-md-6 my-auto">
-            <div class="info-one-left">
+            <div class="info-two-left">
               <h2>Lorem ipsum dolor sit amet.</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
@@ -137,7 +137,7 @@
             </div>
             </div>
               <div class="col-md-6">
-                <div class="info-one-right">
+                <div class="info-two-right">
                   <img src="css/info-two.svg" class="img-fluid" alt="Enjoy" />
                 </div>
             </div>
@@ -152,13 +152,13 @@
       <div class="container">
         <div class="row mt-4">
           <div class="col-md-6">
-            <div class="conctact-content-left">
+            <div class="contact-content-left">
               <h2>Lorem, ipsum dolor.</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus doloribus at aut voluptatibus nihil eaque.</p>    
             </div>
             </div>
           <div class="col-md-6">
-            <div class="conctact-content-right">
+            <div class="contact-content-right">
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
@@ -196,7 +196,7 @@
       </div>
     </footer>
 
-    <!-- CUSTOM CSS -->
+    
 
     <!-- BOOTSTRAP SCRIPTS -->
     <script
@@ -214,5 +214,70 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+
+    <!-- SCROLL REVEAL ANIMATION -->
+    <script>
+      window.sr = ScrollReveal ();
+      sr.reveal('.header-content-left', {
+        duration: 2000,
+        distance: '200px',
+        origin: 'left'
+      });
+      sr.reveal(".header-content-right", {
+        duration: 1000,
+        distance: "200px",
+        origin: "right"
+      });
+      sr.reveal(".header-btn-main", {
+        duration: 2000,
+        distance: '100px',
+        origin: 'bottom',
+        delay: 500
+      });
+      sr.reveal(".header-btn-secondary", {
+        duration: 2000,
+        distance: '100px',
+        origin: 'bottom',
+        delay: 700
+      });
+      sr.reveal("#testimonial", {
+        duration: 2500,
+        distance: '300px',
+        origin: 'left',
+        viewfactor: 0.2,
+        delay: 200
+      });
+      sr.reveal(".info-one-left, .info-two-left, .contact-content-left", {
+        duration: 3000,
+        distance: '300px',
+        origin: 'left'
+      });
+      sr.reveal(".info-one-right, .info-two-right, .contact-content-right", {
+        duration: 3000,
+        distance: '300px',
+        origin: 'right'
+      });
+      sr.reveal("#contact", {
+        duration: 3000,
+        distance: '300px',
+        origin: 'right'
+      });
+
+    </script>
+
+
+
+    <!-- SMOOTH SCROLLING -->
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+    </script>
   </body>
 </html>
