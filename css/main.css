@@ -60,12 +60,12 @@ p {
 
 .logo-ani h2:nth-child(1) {
     color: transparent;
-    -webkit-text-stroke: 2px #ffffff;
+    -webkit-text-stroke: 1px #ffffff;
 }
 
 .logo-ani h2:nth-child(2) {
     color: #ffffff;
-    animation: logo-anima 4s ease-in-out infinite;
+    animation: logo-anima 8s ease-in-out infinite;
 }
 @keyframes logo-anima {
   0%,100% {
@@ -107,3 +107,17 @@ p {
      }
  }
 
+ /* INFO-ONE-SVG */
+
+ #top-tree, #top-tree-2 {
+     animation: tree-ani 2s ease-in-out infinite alternate;
+ }
+
+ @keyframes tree-ani {
+     from {
+         transform: rotateX(-10deg);
+     }
+     to {
+         transform: rotateX(10deg);
+     }
+ }
