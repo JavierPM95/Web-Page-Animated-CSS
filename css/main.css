@@ -48,13 +48,40 @@ p {
     color: #ffffff;
 }
 
+/* LOGO ANIMATION*/
+.logo-ani {
+    position: relative; 
+}
+
+.logo-ani h2 {
+    position: absolute;
+    font-size: 3em;
+}
+
+.logo-ani h2:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px #ffffff;
+}
+
+.logo-ani h2:nth-child(2) {
+    color: #ffffff;
+    animation: logo-anima 4s ease-in-out infinite;
+}
+@keyframes logo-anima {
+  0%,100% {
+    clip-path: polygon(0 41%, 20% 38%, 36% 48%, 45% 61%, 57% 68%, 71% 70%, 84% 64%, 100% 60%, 100% 100%, 0% 100%);
+  }
+  50% {
+    clip-path: polygon(0 64%, 19% 69%, 35% 66%, 45% 61%, 57% 53%, 72% 44%, 85% 38%, 100% 34%, 100% 100%, 0% 100%);
+  }
+}
+
 /*BIKE ANIMATION*/
 
 #front-wheel, #back-wheel {
     animation: wheel 5s infinite linear;
     transform-origin: center;
     transform-box: fill-box;
-
 }
 
 @keyframes wheel {
