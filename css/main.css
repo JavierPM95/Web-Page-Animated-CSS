@@ -47,3 +47,36 @@ p {
 #footer a {
     color: #ffffff;
 }
+
+/*BIKE ANIMATION*/
+
+#front-wheel, #back-wheel {
+    animation: wheel 5s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+
+}
+
+@keyframes wheel {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+#body-bike {
+    animation: bike 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+}
+
+ @keyframes bike {
+     from {
+        transform: rotateX(0deg);
+     }
+     to {
+        transform: rotateX(15deg);
+     }
+ }
+
