@@ -1,0 +1,87 @@
+.color-1, .color-2 {
+    fill: #b50005;
+  }
+
+  .color-1, .color-15, .color-7, .color-8 {
+    opacity: 0.1;
+  }
+
+  .color-3, .color-6 {
+    opacity: 0.2;
+  }
+
+  .color-4 {
+    fill: #636780;
+  }
+
+  .color-5 {
+    opacity: 0.4;
+  }
+
+  .color-12, .color-26, .color-6, .color-7 {
+    fill: #fff;
+  }
+
+  .color-9 {
+    fill: #dce0ed;
+  }
+
+  .color-10 {
+    fill: #f0f0f4;
+  }
+
+  .color-11 {
+    fill: none;
+  }
+
+  .color-13 {
+    fill: #a8a8a8;
+  }
+
+  .color-14 {
+    fill: url(#linear-gradient);
+  }
+
+  .color-16 {
+    fill: url(#linear-gradient-2);
+  }
+
+  .color-17 {
+    fill: #985c7e;
+  }
+
+  .color-18 {
+    fill: #ecb4b6;
+  }
+
+  .color-19 {
+    opacity: 0.07;
+  }
+
+  .color-20 {
+    opacity: 0.05;
+  }
+
+  .color-21 {
+    fill: #cc8294;
+  }
+
+  .color-22 {
+    fill: #4b4b5b;
+  }
+
+  .cls-23 {
+    opacity: 0.03;
+  }
+
+  .color-24 {
+    fill: #ff718d;
+  }
+
+  .color-25 {
+    fill: #e7c7ca;
+  }
+
+  .color-26 {
+    opacity: 0.3;
+  }

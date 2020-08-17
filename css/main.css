@@ -123,9 +123,7 @@ p {
      }
  }
 
-
-
- #plant-3, #plant-4, #plant-6 {
+#plant-3, #plant-4, #plant-6 {
      animation: wind-plant 1.5s ease-in-out infinite alternate;
  }
 
@@ -145,4 +143,46 @@ p {
      100% { opacity: 0;transform: translateY(100px);}
  }
 
- 
+/* INFO-TWO-SVG */
+
+#leaf-3 {
+    animation: wind-leaf-3 4s linear infinite;
+}
+
+@keyframes wind-leaf-3 {
+    0% {opacity: 0; transform: translateY(-100px);}
+    10% { opacity: 1; transform: translateY(-80px);}
+    90% { opacity: 1; transform: translateY(80px);}
+    100% { opacity: 0;transform: translateY(100px);}
+}
+
+#info-two-back {
+    animation: back-move 5s ease-in-out infinite alternate;
+}
+
+@keyframes back-move {
+    from {transform: translate(10px, -10px);}
+    to {transform: translate(-10px, 10px);}
+}
+
+#leaf-2, #leaf-1 {
+    animation: wind-leaf-2 8s linear infinite;
+}
+
+@keyframes wind-leaf-2 {
+    0% {opacity: 0; transform: translateY(-150px) scale(0.5);}
+    10% { opacity: 1; transform: translateY(-130px) scale(0.5);}
+    90% { opacity: 1; transform: translateY(10px) scale(1);}
+    100% { opacity: 0;transform: translateY(30px) scale(1);}
+}
+
+
+#car {
+    animation: car-ani 4s ease-in-out infinite alternate;
+    transform-origin: bottom;
+}
+
+@keyframes car-ani {
+    from {transform: translateX(10px) scale(0.95);}
+    to {transform: translateX(-10px) scale(1);}
+}
