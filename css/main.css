@@ -110,14 +110,39 @@ p {
  /* INFO-ONE-SVG */
 
  #top-tree, #top-tree-2 {
-     animation: tree-ani 2s ease-in-out infinite alternate;
+     animation: wind-tree 2.5s ease-in-out infinite alternate;
+     transform-origin: center;
  }
 
- @keyframes tree-ani {
+ @keyframes wind-tree {
      from {
-         transform: rotateX(-10deg);
+         transform: translate(-10px, 10px) rotateY(-10deg);
      }
      to {
-         transform: rotateX(10deg);
+         transform: translate(10px, 0px) rotateY(10deg);
      }
  }
+
+
+
+ #plant-3, #plant-4, #plant-6 {
+     animation: wind-plant 1.5s ease-in-out infinite alternate;
+ }
+
+ @keyframes wind-plant {
+     from {transform: translate(0px,5px) rotateX(-10deg);}
+     to {transform: translate(10px, -5px) rotateY(5deg);}
+ }
+
+ #leaf {
+     animation: wind-leaf 4s linear infinite;
+ }
+
+ @keyframes wind-leaf {
+     0% {opacity: 0; transform: translateY(-50px);}
+     10% { opacity: 1; transform: translateY(-40px);}
+     90% { opacity: 1; transform: translateY(90px);}
+     100% { opacity: 0;transform: translateY(100px);}
+ }
+
+ 
