@@ -48,26 +48,94 @@ p {
     color: #ffffff;
 }
 
+
+
 /* LOGO ANIMATION*/
-.logo-ani {
+#logo-svg {
+    animation: relleno 1s ease forwards;
+}
+
+#logo-svg path:nth-child(1) {
+    stroke-dasharray: 470;
+    stroke-dashoffset: 470;
+    animation: logo-ani 2s ease forwards;
+}
+#logo-svg path:nth-child(2) {
+    stroke-dasharray: 581;
+    stroke-dashoffset: 581;
+    animation: logo-ani 2s ease forwards 0.2s;
+}
+#logo-svg path:nth-child(3) {
+    stroke-dasharray: 246;
+    stroke-dashoffset: 246;
+    animation: logo-ani 2s ease forwards 0.4s;
+}
+#logo-svg path:nth-child(4) {
+    stroke-dasharray: 789;
+    stroke-dashoffset: 789;
+    animation: logo-ani 2s ease forwards 0.6s;
+}
+#logo-svg path:nth-child(5) {
+    stroke-dasharray: 470;
+    stroke-dashoffset: 470;
+    animation: logo-ani 2s ease forwards 0.8s;
+}
+#logo-svg path:nth-child(6) {
+    stroke-dasharray: 372;
+    stroke-dashoffset: 372;
+    animation: logo-ani 2s ease forwards 1s;
+}
+#logo-svg path:nth-child(7) {
+    stroke-dasharray: 518;
+    stroke-dashoffset: 518;
+    animation: logo-ani 2s ease forwards 1.2s;
+}
+#logo-svg path:nth-child(8) {
+    stroke-dasharray: 473;
+    stroke-dashoffset: 473;
+    animation: logo-ani 2s ease forwards 1.4s;
+}
+#logo-svg path:nth-child(9) {
+    stroke-dasharray: 520;
+    stroke-dashoffset: 520;
+    animation: logo-ani 2s ease forwards 1.6s;
+}
+#logo-svg path:nth-child(10) {
+    stroke-dasharray: 520;
+    stroke-dashoffset: 520;
+    animation: logo-ani 2s ease forwards 1.8s;
+}
+
+
+@keyframes logo-ani {
+    to {stroke-dashoffset: 0; }
+}
+
+@keyframes relleno {
+    from {fill: transparent;}
+    to {fill: #ffffff;}
+}
+
+/* WATER-ANIMATION*/
+.water-move {
     position: relative; 
 }
 
-.logo-ani h2 {
+.water-move h2 {
     position: absolute;
     font-size: 3em;
 }
 
-.logo-ani h2:nth-child(1) {
+.water-move h2:nth-child(1) {
     color: transparent;
     -webkit-text-stroke: 1px #ffffff;
 }
 
-.logo-ani h2:nth-child(2) {
+.water-move h2:nth-child(2) {
     color: #ffffff;
-    animation: logo-anima 8s ease-in-out infinite;
+    animation: water-ani 8s ease-in-out infinite;
 }
-@keyframes logo-anima {
+@keyframes water-ani {
   0%,100% {
     clip-path: polygon(0 41%, 20% 38%, 36% 48%, 45% 61%, 57% 68%, 71% 70%, 84% 64%, 100% 60%, 100% 100%, 0% 100%);
   }
