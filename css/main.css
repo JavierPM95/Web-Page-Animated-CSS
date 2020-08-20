@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
 }
 
 p {
@@ -13,7 +14,7 @@ p {
 /*HEADER*/
 
 #header {
-    margin-top: 80px;
+    margin-top: 5rem;
 }
 
 
@@ -21,9 +22,9 @@ p {
 
 #testimonial {
     background: #f1f1f1f1;
-    padding: 40px 0 40px 0;
+    padding: 2.5rem 0 2.5rem 0;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 2.5rem;
 
 }
 
@@ -34,8 +35,8 @@ p {
 /*CONTACT*/
 #contact {
     background: #f1f1f1;
-    margin-top: 40px;
-    padding: 40px 0;
+    margin-top: 2.5rem;
+    padding: 2.5rem 0;
 }
 
 /*FOOOTER*/
@@ -49,11 +50,20 @@ p {
     color: #ffffff;
 }
 
+@media (min-width: 576px) { font-size: 8px; }
+
+@media (min-width: 768px) { font-size: 16px; }
+
+@media (min-width: 992px) { font-size: 24px; }
+
+@media (min-width: 1200px) { font-size: 32px; }
 
 
 /* LOGO ANIMATION*/
 #logo-svg {
-    animation: relleno 1s ease forwards;
+    animation: relleno 1s ease forwards 3.6s;
+    font-size: 2rem;
+    fill: transparent;
 }
 
 #logo-svg path:nth-child(1) {
@@ -107,14 +117,13 @@ p {
     animation: logo-ani 2s ease forwards 1.8s;
 }
 
-
 @keyframes logo-ani {
     to {stroke-dashoffset: 0; }
 }
 
 @keyframes relleno {
-    from {fill: transparent;}
-    to {fill: #ffffff;}
+    from {fill: transparent; }
+    to {fill: #ffffff; }
 }
 
 /* WATER-ANIMATION*/
@@ -124,7 +133,10 @@ p {
 
 .water-move h2 {
     position: absolute;
-    font-size: 3em;
+    font-size: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .water-move h2:nth-child(1) {
