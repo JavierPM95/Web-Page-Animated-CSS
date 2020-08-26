@@ -39,6 +39,44 @@ p {
     padding: 2.5rem 0;
 }
 
+#contact .text-animation {
+    margin-left: 15px;
+    margin-top: -30px;
+    position: absolute;
+    z-index: -20;
+    transition: all ease-out 0.2s;
+}
+
+#contact .message-animation {
+    margin-left: 15px;
+    margin-top: -130px;
+    position: absolute;
+    z-index: -20;
+    transition: all ease-out 0.2s;
+}
+
+#contact input {
+    background: rgba(255, 255, 255, 0.5);
+    margin-top: 20px;
+}
+
+#contact input:focus + 
+.text-animation{
+    margin-top: -70px;
+}
+
+#contact textarea {
+    background: rgba(255, 255, 255, 0.5);
+    margin-top: 40px;
+}
+
+#contact textarea:focus + 
+.message-animation{
+    margin-top: -170px;
+}
+
+
+
 /*FOOOTER*/
 
 #footer {
