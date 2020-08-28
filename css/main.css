@@ -41,7 +41,7 @@ p {
 
 #contact .text-animation {
     margin-left: 15px;
-    margin-top: -30px;
+    margin-top: -35px;
     position: absolute;
     z-index: -20;
     transition: all ease-out 0.2s;
@@ -62,7 +62,7 @@ p {
 
 #contact input:focus + 
 .text-animation{
-    margin-top: -70px;
+    margin-top: -72px;
 }
 
 #contact textarea {
@@ -72,10 +72,16 @@ p {
 
 #contact textarea:focus + 
 .message-animation{
-    margin-top: -170px;
+    margin-top: -172px;
 }
 
+.set-text {
+    margin-top: -72px !important;
+}
 
+.set-message {
+    margin-top: -172px !important;
+}
 
 /*FOOOTER*/
 
